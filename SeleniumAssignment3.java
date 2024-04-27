@@ -8,8 +8,7 @@ public class SeleniumAssignment3 {
 		// TODO Auto-generated method stub
 		ChromeDriver driver = new ChromeDriver();
 		driver.get("https://www.google.com/");
-		WebElement title = driver.findElement(By.tagName("title"));
-		System.out.println("Title of the page is: "+title);
+		System.out.println("Title of the page is: "+driver.getTitle());
 		Thread.sleep(2000);
 		driver.close();
 
